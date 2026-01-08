@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-rows: 10vh minmax(90vh, max-content);
+
+    main {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        column-gap: 50px;
+        row-gap: 50px;
+
+        .grid {
+            height: 30vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            div {
+                border: 1px dashed #ccc;
+            }
+        }
+    }
+}
+Soft-wrap
